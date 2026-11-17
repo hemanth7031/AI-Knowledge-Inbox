@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+.app-header {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.app-header h1 {
+  margin: 0 0 10px;
+}
+
+.app-header p {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.main-content {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.panel {
+  background: white;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 15px 0 8px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  margin-bottom: 12px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.message {
+  color: #b91c1c;
+  margin-top: 12px;
+}
+
+.items-list {
+  display: grid;
+  gap: 14px;
+}
+
+.item-card,
+.source-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 12px;
+}
+
+.item-card h3 {
+  margin-top: 0;
+}
+
+.item-type {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 4px 9px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.item-card small {
+  display: block;
+  margin-top: 12px;
+  color: #64748b;
+}
+
+.answer-section {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.answer-text {
+  white-space: pre-wrap;
+  line-height: 1.7;
+}
+
+.source-card p {
+  line-height: 1.6;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    width: 94%;
+    margin: 16px auto;
+  }
+
+  .panel {
+    padding: 16px;
+  }
+}
